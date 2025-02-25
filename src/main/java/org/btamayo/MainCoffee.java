@@ -1,6 +1,6 @@
 package org.btamayo;
 
-public class MainCoffeeObject {
+public class MainCoffee {
     public static void main(String[] args) {
         String[] flavorNotes1 = {"Chocolate", "Nutty"};
         CoffeeObject coffee1 = new CoffeeObject("Espresso", "Arabica", "Small", 3.99, "Dark", "Italy", false, 50, flavorNotes1, "Espresso");
