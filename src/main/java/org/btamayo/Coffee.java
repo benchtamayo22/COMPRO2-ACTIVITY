@@ -2,7 +2,7 @@ package org.btamayo;
 
 import java.util.Arrays;
 
-    public class CoffeeObject {
+    public class Coffee {
 
         public String name;
         public String type;
@@ -15,7 +15,7 @@ import java.util.Arrays;
         public String[] flavorNotes;
         public String brewMethod;
 
-        public CoffeeObject(String name, String type, String size, double price, String roastLevel, String origin, boolean isDecaf, int stock, String[] flavorNotes, String brewMethod) {
+        public Coffee(String name, String type, String size, double price, String roastLevel, String origin, boolean isDecaf, int stock, String[] flavorNotes, String brewMethod) {
             this.name = name;
             this.type = type;
             this.size = size;
@@ -28,10 +28,9 @@ import java.util.Arrays;
             this.brewMethod = brewMethod;
         }
 
-  
         public double calculatePrice(String size) {
-         
-            return 0.0;
+  
+            return 0.0; 
         }
 
         public boolean checkStock() {
@@ -39,7 +38,7 @@ import java.util.Arrays;
         }
 
         public void addFlavor(String note) {
-        
+           
         }
 
         public void updateStock(int quantity) {
