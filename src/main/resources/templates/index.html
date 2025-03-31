@@ -1,0 +1,30 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee List</title>
+</head>
+<body>
+<h2>Coffee List</h2>
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Coffee Name</th>
+        <th>Coffee Type</th>
+        <th>Actions</th>
+    </tr>
+    <tr th:each="coffee : ${coffees}">
+        <td th:text="${coffee.id}"></td>
+        <td th:text="${coffee.name}"></td>
+        <td th:text="${coffee.type}"></td>
+        <td>
+            <a th:href="@{/edit(id=${coffee.id})}">Edit</a> |
+            <a th:href="@{/delete(id=${coffee.id})}">Delete</a>
+        </td>
+    </tr>
+</table>
+<a href="/add">Add New Coffee</a>
+</body>
+</html>

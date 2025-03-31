@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Coffee</title>
+</head>
+<body>
+<h2>Edit Coffee</h2>
+<form action="/update" method="post">
+    <input type="hidden" name="id" th:value="${coffee.id}">
+    <label>Coffee Name: <input type="text" name="name" th:value="${coffee.name}" required></label><br>
+    <label>Coffee Type: <input type="text" name="type" th:value="${coffee.type}" required></label><br>
+    <button type="submit">Update Coffee</button>
+</form>
+<a href="/">Back to Coffee List</a>
+</body>
+</html>
